@@ -1,3 +1,3 @@
-## Projet Final Angular - NestJs
+# Projet Final Angular - NestJs
 
-# Lilyan Muller - Matis Dotto
+## Lilyan Muller - Matis Dotto
