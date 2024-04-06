@@ -8,4 +8,3 @@ export type Driver = {
     dateOfBirth: string;
     nationality: string;
 };
-  

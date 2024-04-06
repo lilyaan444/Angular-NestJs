@@ -6,18 +6,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.AppModule = void 0;
+exports.DriversModule = void 0;
 const common_1 = require("@nestjs/common");
-const drivers_module_1 = require("./drivers/drivers.module");
-const constructors_module_1 = require("./constructors/constructors.module");
-let AppModule = class AppModule {
+const drivers_controller_1 = require("./drivers.controller");
+const drivers_service_1 = require("./drivers.service");
+let DriversModule = class DriversModule {
 };
-exports.AppModule = AppModule;
-exports.AppModule = AppModule = __decorate([
+exports.DriversModule = DriversModule;
+exports.DriversModule = DriversModule = __decorate([
     (0, common_1.Module)({
-        imports: [drivers_module_1.DriversModule, constructors_module_1.ConstructorsModule],
-        controllers: [],
-        providers: [],
+        controllers: [drivers_controller_1.DriversController],
+        providers: [drivers_service_1.DriversService]
     })
-], AppModule);
-//# sourceMappingURL=app.module.js.map
+], DriversModule);
+//# sourceMappingURL=drivers.module.js.map

@@ -1,4 +1,4 @@
-export type Driver = {
+export declare const DRIVERS: {
     driverId: string;
     permanentNumber: string;
     code: string;
@@ -7,5 +7,4 @@ export type Driver = {
     familyName: string;
     dateOfBirth: string;
     nationality: string;
-};
-  
+}[];
