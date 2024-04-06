@@ -34,7 +34,7 @@ let DriversController = class DriversController {
 };
 exports.DriversController = DriversController;
 __decorate([
-    (0, common_1.Get)(),
+    (0, common_1.Get)("all"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", rxjs_1.Observable)

@@ -8,7 +8,7 @@ import { Driver } from './drivers.types';
 export class DriversController {
     constructor(private readonly _driversService: DriversService, private readonly _driversFavoriteService: DriversFavoriteService) {}
 
-    @Get()
+    @Get("all")
     getAllDrivers(): Observable<Driver[]> {
         return of(this._driversService.getAll());
     }
