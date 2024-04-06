@@ -11,6 +11,7 @@ exports.DRIVERS = [
         familyName: 'Albon',
         dateOfBirth: '1996-03-23',
         nationality: 'Thai',
+        imageUrl: 'https://media.formula1.com/content/dam/fom-website/drivers/2024Drivers/albon.jpg.img.1920.medium.jpg/1708362042590.jpg',
     },
     {
         driverId: 'alonso',
@@ -21,6 +22,7 @@ exports.DRIVERS = [
         familyName: 'Alonso',
         dateOfBirth: '1981-07-29',
         nationality: 'Spanish',
+        imageUrl: 'https://exemple.com/image.jpg',
     },
     {
         driverId: 'bearman',
@@ -31,6 +33,7 @@ exports.DRIVERS = [
         familyName: 'Bearman',
         dateOfBirth: '2005-05-08',
         nationality: 'British',
+        imageUrl: 'https://exemple.com/image.jpg',
     },
     {
         driverId: 'bottas',
@@ -41,6 +44,7 @@ exports.DRIVERS = [
         familyName: 'Bottas',
         dateOfBirth: '1989-08-28',
         nationality: 'Finnish',
+        imageUrl: 'https://exemple.com/image.jpg',
     },
     {
         driverId: 'gasly',
@@ -51,6 +55,7 @@ exports.DRIVERS = [
         familyName: 'Gasly',
         dateOfBirth: '1996-02-07',
         nationality: 'French',
+        imageUrl: 'https://exemple.com/image.jpg',
     },
     {
         driverId: 'hamilton',
@@ -61,6 +66,7 @@ exports.DRIVERS = [
         familyName: 'Hamilton',
         dateOfBirth: '1985-01-07',
         nationality: 'British',
+        imageUrl: 'https://exemple.com/image.jpg',
     },
     {
         driverId: 'hulkenberg',
@@ -71,6 +77,7 @@ exports.DRIVERS = [
         familyName: 'Hülkenberg',
         dateOfBirth: '1987-08-19',
         nationality: 'German',
+        imageUrl: 'https://exemple.com/image.jpg',
     },
     {
         driverId: 'leclerc',
@@ -81,6 +88,7 @@ exports.DRIVERS = [
         familyName: 'Leclerc',
         dateOfBirth: '1997-10-16',
         nationality: 'Monegasque',
+        imageUrl: 'https://exemple.com/image.jpg',
     },
     {
         driverId: 'kevin_magnussen',
@@ -91,6 +99,7 @@ exports.DRIVERS = [
         familyName: 'Magnussen',
         dateOfBirth: '1992-10-05',
         nationality: 'Danish',
+        imageUrl: 'https://exemple.com/image.jpg',
     },
     {
         driverId: 'norris',
@@ -101,6 +110,7 @@ exports.DRIVERS = [
         familyName: 'Norris',
         dateOfBirth: '1999-11-13',
         nationality: 'British',
+        imageUrl: 'https://exemple.com/image.jpg',
     },
     {
         driverId: 'ocon',
@@ -111,6 +121,7 @@ exports.DRIVERS = [
         familyName: 'Ocon',
         dateOfBirth: '1996-09-17',
         nationality: 'French',
+        imageUrl: 'https://exemple.com/image.jpg',
     },
     {
         driverId: 'perez',
@@ -121,6 +132,7 @@ exports.DRIVERS = [
         familyName: 'Pérez',
         dateOfBirth: '1990-01-26',
         nationality: 'Mexican',
+        imageUrl: 'https://exemple.com/image.jpg',
     },
     {
         driverId: 'piastri',
@@ -131,6 +143,7 @@ exports.DRIVERS = [
         familyName: 'Piastri',
         dateOfBirth: '2001-04-06',
         nationality: 'Australian',
+        imageUrl: 'https://exemple.com/image.jpg',
     },
     {
         driverId: 'ricciardo',
@@ -141,6 +154,7 @@ exports.DRIVERS = [
         familyName: 'Ricciardo',
         dateOfBirth: '1989-07-01',
         nationality: 'Australian',
+        imageUrl: 'https://exemple.com/image.jpg',
     },
     {
         driverId: 'russell',
@@ -151,6 +165,7 @@ exports.DRIVERS = [
         familyName: 'Russell',
         dateOfBirth: '1998-02-15',
         nationality: 'British',
+        imageUrl: 'https://exemple.com/image.jpg',
     },
     {
         driverId: 'sainz',
@@ -161,6 +176,7 @@ exports.DRIVERS = [
         familyName: 'Sainz',
         dateOfBirth: '1994-09-01',
         nationality: 'Spanish',
+        imageUrl: 'https://exemple.com/image.jpg',
     },
     {
         driverId: 'sargeant',
@@ -171,6 +187,7 @@ exports.DRIVERS = [
         familyName: 'Sargeant',
         dateOfBirth: '2000-12-31',
         nationality: 'American',
+        imageUrl: 'https://exemple.com/image.jpg',
     },
     {
         driverId: 'stroll',
@@ -181,6 +198,7 @@ exports.DRIVERS = [
         familyName: 'Stroll',
         dateOfBirth: '1998-10-29',
         nationality: 'Canadian',
+        imageUrl: 'https://exemple.com/image.jpg',
     },
     {
         driverId: 'tsunoda',
@@ -191,6 +209,7 @@ exports.DRIVERS = [
         familyName: 'Tsunoda',
         dateOfBirth: '2000-05-11',
         nationality: 'Japanese',
+        imageUrl: 'https://exemple.com/image.jpg',
     },
     {
         driverId: 'max_verstappen',
@@ -201,6 +220,7 @@ exports.DRIVERS = [
         familyName: 'Verstappen',
         dateOfBirth: '1997-09-30',
         nationality: 'Dutch',
+        imageUrl: 'https://exemple.com/image.jpg',
     },
     {
         driverId: 'zhou',
@@ -211,6 +231,7 @@ exports.DRIVERS = [
         familyName: 'Zhou',
         dateOfBirth: '1999-05-30',
         nationality: 'Chinese',
+        imageUrl: 'https://exemple.com/image.jpg',
     },
 ];
 //# sourceMappingURL=drivers.js.map

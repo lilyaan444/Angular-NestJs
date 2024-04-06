@@ -7,4 +7,5 @@ export declare const DRIVERS: {
     familyName: string;
     dateOfBirth: string;
     nationality: string;
+    imageUrl: string;
 }[];
