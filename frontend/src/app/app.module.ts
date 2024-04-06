@@ -8,6 +8,11 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { DriversComponent } from './components/drivers/drivers.component';
 import { ConstructorsComponent } from './components/constructors/constructors.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -19,9 +24,14 @@ import { ConstructorsComponent } from './components/constructors/constructors.co
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

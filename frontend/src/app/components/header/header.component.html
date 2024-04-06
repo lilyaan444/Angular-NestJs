@@ -1,5 +1,9 @@
-<!-- Exemple simple pour header.component.html -->
-<header>
-  <img src="../../../assets/images/F1 Logo.png" alt="F1 Logo">
-  <h1>F1 Fan</h1>
-</header>
+<mat-toolbar color="primary">
+  <img src="../../../assets/images/F1 Logo.png" alt="F1 Logo" style="height: 50px; margin-right: 20px;">
+  <span class="flex-spacer"></span>
+  <button mat-button routerLink="/drivers">Pilotes</button>
+  <button mat-button routerLink="/constructors">Constructeurs</button>
+  <span class="flex-spacer"></span>
+  <h1 style="font-size: 24px; color: white;">F1 Fan Club</h1>
+  <span class="flex-spacer"></span>
+</mat-toolbar>
