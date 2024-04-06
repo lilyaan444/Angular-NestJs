@@ -4,6 +4,6 @@ import { ConstructorsService } from './constructors.service';
 
 @Module({
   controllers: [ConstructorsController],
-  providers: [ConstructorsService]
+  providers: [ConstructorsService],
 })
 export class ConstructorsModule {}

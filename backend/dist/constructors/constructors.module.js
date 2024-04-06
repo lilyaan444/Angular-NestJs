@@ -16,7 +16,7 @@ exports.ConstructorsModule = ConstructorsModule;
 exports.ConstructorsModule = ConstructorsModule = __decorate([
     (0, common_1.Module)({
         controllers: [constructors_controller_1.ConstructorsController],
-        providers: [constructors_service_1.ConstructorsService]
+        providers: [constructors_service_1.ConstructorsService],
     })
 ], ConstructorsModule);
 //# sourceMappingURL=constructors.module.js.map

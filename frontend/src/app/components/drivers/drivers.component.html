@@ -1,0 +1,8 @@
+<div class="drivers-container">
+  <h2>Drivers</h2>
+  <ul>
+    <li *ngFor="let driver of drivers">
+      {{driver.givenName}} {{driver.driverId}} ({{driver.nationality}})
+    </li>
+  </ul>
+</div>
