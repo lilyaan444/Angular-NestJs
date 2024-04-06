@@ -1,15 +1,14 @@
-.constructors-container {
-  ul {
-    list-style-type: none;
-    padding: 0;
+.constructor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
 
-    li {
-      padding: 10px;
-      border-bottom: 1px solid #ccc;
-
-      &:last-child {
-        border-bottom: none;
-      }
-    }
+.constructor-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
   }
 }

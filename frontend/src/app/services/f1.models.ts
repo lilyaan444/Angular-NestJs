@@ -1,12 +1,13 @@
 export interface Driver {
   driverId: string;
-  permanentNumber?: string; // L'utilisation de '?' rend ces champs optionnels
+  permanentNumber?: string;
   code?: string;
   url: string;
   givenName: string;
   familyName: string;
   dateOfBirth: string;
   nationality: string;
+  imageUrl: string;
 }
 
 export interface Constructor {
@@ -14,4 +15,5 @@ export interface Constructor {
   url: string;
   name: string;
   nationality: string;
+  logoUrl: string;
 }

@@ -1,8 +1,18 @@
-<div class="constructors-container">
-  <h2>Constructors</h2>
-  <ul>
-    <li *ngFor="let constructor of constructors">
-      {{constructor.name}} ({{constructor.nationality}})
-    </li>
-  </ul>
+<div class="constructor-grid">
+  <mat-card *ngFor="let constructor of constructors" class="constructor-card">
+    <mat-card-header>
+      <mat-card-title>{{constructor.name}}</mat-card-title>
+      <mat-card-subtitle>{{constructor.nationality}}</mat-card-subtitle>
+    </mat-card-header>
+    <div mat-card-image class="driver-avatar" [style.background-image]="'url(' + constructor.logoUrl + ')'"></div>
+    <mat-card-content>
+      <p>
+        Détail à faire.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>FAVORIS</button>
+      <button mat-button>PLUS D'INFO</button>
+    </mat-card-actions>
+  </mat-card>
 </div>
