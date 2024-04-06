@@ -10,7 +10,6 @@ exports.ConstructorsModule = void 0;
 const common_1 = require("@nestjs/common");
 const constructors_controller_1 = require("./constructors.controller");
 const constructors_service_1 = require("./constructors.service");
-const constructors_favorite_service_1 = require("./constructors-favorite/constructors-favorite.service");
 let ConstructorsModule = class ConstructorsModule {
 };
 exports.ConstructorsModule = ConstructorsModule;
