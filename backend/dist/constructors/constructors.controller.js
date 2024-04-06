@@ -23,7 +23,7 @@ let ConstructorsController = class ConstructorsController {
 };
 exports.ConstructorsController = ConstructorsController;
 __decorate([
-    (0, common_1.Get)("all"),
+    (0, common_1.Get)(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", rxjs_1.Observable)

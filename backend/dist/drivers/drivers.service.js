@@ -20,6 +20,15 @@ let DriversService = class DriversService {
     getAll() {
         return this._drivers;
     }
+    getById(driverId) {
+        const driver = this._drivers.find((element) => element.driverId === driverId);
+        if (driver !== undefined) {
+            return driver;
+        }
+        else {
+            throw new common_1.NotFoundException(`Le conducteur avec l'id '${driverId}' n'existe pas`);
+        }
+    }
 };
 exports.DriversService = DriversService;
 exports.DriversService = DriversService = __decorate([

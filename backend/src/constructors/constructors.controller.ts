@@ -7,7 +7,7 @@ import { Constructor } from './constructors.types';
 export class ConstructorsController {
     constructor (private readonly constructorsService: ConstructorsService) {}
 
-    @Get("all")
+    @Get()
     getAll(): Observable<Constructor[]> {
         return of(this.constructorsService.getAll());
     }

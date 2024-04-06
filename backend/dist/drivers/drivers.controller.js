@@ -8,28 +8,52 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DriversController = void 0;
 const common_1 = require("@nestjs/common");
 const drivers_service_1 = require("./drivers.service");
+const drivers_favorite_service_1 = require("./drivers-favorite/drivers-favorite.service");
 const rxjs_1 = require("rxjs");
 let DriversController = class DriversController {
-    constructor(_driversService) {
+    constructor(_driversService, _driversFavoriteService) {
         this._driversService = _driversService;
+        this._driversFavoriteService = _driversFavoriteService;
     }
-    getAll() {
+    getAllDrivers() {
         return (0, rxjs_1.of)(this._driversService.getAll());
+    }
+    getAllFavorite() {
+        return (0, rxjs_1.of)(this._driversFavoriteService.getAll());
+    }
+    createFavorite(driverId) {
+        return (0, rxjs_1.of)(this._driversFavoriteService.create(driverId));
     }
 };
 exports.DriversController = DriversController;
 __decorate([
-    (0, common_1.Get)("all"),
+    (0, common_1.Get)(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", rxjs_1.Observable)
-], DriversController.prototype, "getAll", null);
+], DriversController.prototype, "getAllDrivers", null);
+__decorate([
+    (0, common_1.Get)("favorite"),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", rxjs_1.Observable)
+], DriversController.prototype, "getAllFavorite", null);
+__decorate([
+    (0, common_1.Get)("favorite/:id"),
+    __param(0, (0, common_1.Param)("id")),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", rxjs_1.Observable)
+], DriversController.prototype, "createFavorite", null);
 exports.DriversController = DriversController = __decorate([
     (0, common_1.Controller)('drivers'),
-    __metadata("design:paramtypes", [drivers_service_1.DriversService])
+    __metadata("design:paramtypes", [drivers_service_1.DriversService, drivers_favorite_service_1.DriversFavoriteService])
 ], DriversController);
 //# sourceMappingURL=drivers.controller.js.map
