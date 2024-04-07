@@ -1,19 +1,75 @@
 .driver-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 25px;
+  box-sizing: border-box;
 }
 
 .driver-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.18);
   }
 }
 
+.card-content {
+  padding: 15px;
+}
+
+.driver-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 .driver-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
   background-size: cover;
   background-position: center;
+  border: 3px solid white; /* Adds a nice border around the avatar */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Soft shadow around the avatar for depth */
+}
+
+.driver-details p, .driver-details a {
+  color: #333; /* Dark grey color for text */
+  font-size: 0.9rem; /* Slightly smaller font size for details */
+  margin: 5px 0;
+}
+
+.driver-details a {
+  color: #007BFF; /* Bootstrap primary blue for links */
+  text-decoration: none; /* No underline */
+  transition: color 0.2s;
+  &:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline; /* Adds underline on hover */
+  }
+}
+
+mat-card-actions {
+  border-top: 1px solid #eeeeee; /* Light grey border on top of the actions section */
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between; /* Space between buttons */
+  background: #fafafa; /* Light grey background for the actions area */
+}
+
+button.mat-button {
+  border-radius: 20px; /* Makes buttons rounded */
+  font-weight: bold; /* Makes the text bold */
+  transition: background-color 0.2s, transform 0.2s;
+  &:hover {
+    background-color: #eeeeee; /* Light grey background on hover */
+    transform: translateY(-2px); /* Slight raise effect on hover */
+  }
 }
