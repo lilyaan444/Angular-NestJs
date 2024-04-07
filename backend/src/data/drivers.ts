@@ -9,7 +9,7 @@ export const DRIVERS = [
     dateOfBirth: '1996-03-23',
     nationality: 'Thai',
     imageUrl:
-      'https://media.formula1.com/content/dam/fom-website/drivers/2024Drivers/albon.jpg.img.1920.medium.jpg/1708362042590.jpg',
+      'https://rdsimages.cookieless.ca/polopoly_fs/1.16717701!/img/httpImage/image.png',
   },
   {
     driverId: 'alonso',
@@ -20,18 +20,8 @@ export const DRIVERS = [
     familyName: 'Alonso',
     dateOfBirth: '1981-07-29',
     nationality: 'Spanish',
-    imageUrl: 'https://exemple.com/image.jpg',
-  },
-  {
-    driverId: 'bearman',
-    permanentNumber: '38',
-    code: 'BEA',
-    url: 'http://en.wikipedia.org/wiki/Oliver_Bearman',
-    givenName: 'Oliver',
-    familyName: 'Bearman',
-    dateOfBirth: '2005-05-08',
-    nationality: 'British',
-    imageUrl: 'https://exemple.com/image.jpg',
+    imageUrl:
+      'https://rdsimages.cookieless.ca/polopoly_fs/1.16717524!/img/httpImage/image.png',
   },
   {
     driverId: 'bottas',
@@ -42,7 +32,8 @@ export const DRIVERS = [
     familyName: 'Bottas',
     dateOfBirth: '1989-08-28',
     nationality: 'Finnish',
-    imageUrl: 'https://exemple.com/image.jpg',
+    imageUrl:
+      'https://rdsimages.cookieless.ca/polopoly_fs/1.16717477!/img/httpImage/image.png',
   },
   {
     driverId: 'gasly',
@@ -53,7 +44,8 @@ export const DRIVERS = [
     familyName: 'Gasly',
     dateOfBirth: '1996-02-07',
     nationality: 'French',
-    imageUrl: 'https://exemple.com/image.jpg',
+    imageUrl:
+      'https://rdsimages.cookieless.ca/polopoly_fs/1.16717350!/img/httpImage/image.png',
   },
   {
     driverId: 'hamilton',
@@ -64,7 +56,8 @@ export const DRIVERS = [
     familyName: 'Hamilton',
     dateOfBirth: '1985-01-07',
     nationality: 'British',
-    imageUrl: 'https://exemple.com/image.jpg',
+    imageUrl:
+      'https://rdsimages.cookieless.ca/polopoly_fs/1.16717307!/img/httpImage/image.png',
   },
   {
     driverId: 'hulkenberg',
@@ -75,7 +68,8 @@ export const DRIVERS = [
     familyName: 'Hülkenberg',
     dateOfBirth: '1987-08-19',
     nationality: 'German',
-    imageUrl: 'https://exemple.com/image.jpg',
+    imageUrl:
+      'https://rdsimages.cookieless.ca/polopoly_fs/1.16717625!/img/httpImage/image.png',
   },
   {
     driverId: 'leclerc',
@@ -86,7 +80,8 @@ export const DRIVERS = [
     familyName: 'Leclerc',
     dateOfBirth: '1997-10-16',
     nationality: 'Monegasque',
-    imageUrl: 'https://exemple.com/image.jpg',
+    imageUrl:
+      'https://rdsimages.cookieless.ca/polopoly_fs/1.16717241!/img/httpImage/image.png',
   },
   {
     driverId: 'kevin_magnussen',
@@ -97,7 +92,8 @@ export const DRIVERS = [
     familyName: 'Magnussen',
     dateOfBirth: '1992-10-05',
     nationality: 'Danish',
-    imageUrl: 'https://exemple.com/image.jpg',
+    imageUrl:
+      'https://rdsimages.cookieless.ca/polopoly_fs/1.16717609!/img/httpImage/image.png',
   },
   {
     driverId: 'norris',
@@ -108,7 +104,8 @@ export const DRIVERS = [
     familyName: 'Norris',
     dateOfBirth: '1999-11-13',
     nationality: 'British',
-    imageUrl: 'https://exemple.com/image.jpg',
+    imageUrl:
+      'https://rdsimages.cookieless.ca/polopoly_fs/1.16717415!/img/httpImage/image.png',
   },
   {
     driverId: 'ocon',
@@ -119,7 +116,8 @@ export const DRIVERS = [
     familyName: 'Ocon',
     dateOfBirth: '1996-09-17',
     nationality: 'French',
-    imageUrl: 'https://exemple.com/image.jpg',
+    imageUrl:
+      'https://rdsimages.cookieless.ca/polopoly_fs/1.16717387!/img/httpImage/image.png',
   },
   {
     driverId: 'perez',
@@ -130,7 +128,8 @@ export const DRIVERS = [
     familyName: 'Pérez',
     dateOfBirth: '1990-01-26',
     nationality: 'Mexican',
-    imageUrl: 'https://exemple.com/image.jpg',
+    imageUrl:
+      'https://rdsimages.cookieless.ca/polopoly_fs/1.16716762!/img/httpImage/image.png',
   },
   {
     driverId: 'piastri',
@@ -141,7 +140,8 @@ export const DRIVERS = [
     familyName: 'Piastri',
     dateOfBirth: '2001-04-06',
     nationality: 'Australian',
-    imageUrl: 'https://exemple.com/image.jpg',
+    imageUrl:
+      'https://rdsimages.cookieless.ca/polopoly_fs/1.16717437!/img/httpImage/image.png',
   },
   {
     driverId: 'ricciardo',
@@ -152,7 +152,8 @@ export const DRIVERS = [
     familyName: 'Ricciardo',
     dateOfBirth: '1989-07-01',
     nationality: 'Australian',
-    imageUrl: 'https://exemple.com/image.jpg',
+    imageUrl:
+      'https://rdsimages.cookieless.ca/polopoly_fs/1.18073324!/img/httpImage/image.png',
   },
   {
     driverId: 'russell',
@@ -163,7 +164,8 @@ export const DRIVERS = [
     familyName: 'Russell',
     dateOfBirth: '1998-02-15',
     nationality: 'British',
-    imageUrl: 'https://exemple.com/image.jpg',
+    imageUrl:
+      'https://rdsimages.cookieless.ca/polopoly_fs/1.16717323!/img/httpImage/image.png',
   },
   {
     driverId: 'sainz',
@@ -174,7 +176,8 @@ export const DRIVERS = [
     familyName: 'Sainz',
     dateOfBirth: '1994-09-01',
     nationality: 'Spanish',
-    imageUrl: 'https://exemple.com/image.jpg',
+    imageUrl:
+      'https://rdsimages.cookieless.ca/polopoly_fs/1.16717271!/img/httpImage/image.png',
   },
   {
     driverId: 'sargeant',
@@ -185,7 +188,8 @@ export const DRIVERS = [
     familyName: 'Sargeant',
     dateOfBirth: '2000-12-31',
     nationality: 'American',
-    imageUrl: 'https://exemple.com/image.jpg',
+    imageUrl:
+      'https://rdsimages.cookieless.ca/polopoly_fs/1.16718283!/img/httpImage/image.png',
   },
   {
     driverId: 'stroll',
@@ -196,7 +200,8 @@ export const DRIVERS = [
     familyName: 'Stroll',
     dateOfBirth: '1998-10-29',
     nationality: 'Canadian',
-    imageUrl: 'https://exemple.com/image.jpg',
+    imageUrl:
+      'https://rdsimages.cookieless.ca/polopoly_fs/1.16717539!/img/httpImage/image.png',
   },
   {
     driverId: 'tsunoda',
@@ -207,7 +212,8 @@ export const DRIVERS = [
     familyName: 'Tsunoda',
     dateOfBirth: '2000-05-11',
     nationality: 'Japanese',
-    imageUrl: 'https://exemple.com/image.jpg',
+    imageUrl:
+      'https://rdsimages.cookieless.ca/polopoly_fs/1.16717640!/img/httpImage/image.png',
   },
   {
     driverId: 'max_verstappen',
@@ -218,7 +224,8 @@ export const DRIVERS = [
     familyName: 'Verstappen',
     dateOfBirth: '1997-09-30',
     nationality: 'Dutch',
-    imageUrl: 'https://exemple.com/image.jpg',
+    imageUrl:
+      'https://rdsimages.cookieless.ca/polopoly_fs/1.16716083!/img/httpImage/image.png',
   },
   {
     driverId: 'zhou',
@@ -229,6 +236,7 @@ export const DRIVERS = [
     familyName: 'Zhou',
     dateOfBirth: '1999-05-30',
     nationality: 'Chinese',
-    imageUrl: 'https://exemple.com/image.jpg',
+    imageUrl:
+      'https://rdsimages.cookieless.ca/polopoly_fs/1.16717461!/img/httpImage/image.png',
   },
 ];

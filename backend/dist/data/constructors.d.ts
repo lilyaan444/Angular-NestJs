@@ -3,4 +3,5 @@ export declare const CONSTRUCTORS: {
     url: string;
     name: string;
     nationality: string;
+    logoUrl: string;
 }[];
