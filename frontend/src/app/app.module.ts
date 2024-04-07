@@ -15,6 +15,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { HomeComponent } from './pages/home/home.component';
+import { FavoritesComponent } from './pages/favorites/favorites.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HomeComponent } from './pages/home/home.component';
     DriversComponent,
     ConstructorsComponent,
     HomeComponent,
+    FavoritesComponent,
   ],
   imports: [
     BrowserModule,

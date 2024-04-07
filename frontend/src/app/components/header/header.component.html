@@ -3,5 +3,7 @@
   <span class="flex-spacer"></span>
   <button mat-button routerLink="/drivers">Pilotes</button>
   <button mat-button routerLink="/constructors">Constructeurs</button>
-  <span class="flex-spacer"></span>
+  <button mat-icon-button [routerLink]="'/favorites'">
+    <mat-icon>favorite</mat-icon>
+  </button>
 </mat-toolbar>
