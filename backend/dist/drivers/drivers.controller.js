@@ -31,6 +31,9 @@ let DriversController = class DriversController {
     createFavorite(driverId) {
         return (0, rxjs_1.of)(this._driversFavoriteService.create(driverId));
     }
+    deleteFavorite(driverId) {
+        return (0, rxjs_1.of)(this._driversFavoriteService.delete(driverId));
+    }
 };
 exports.DriversController = DriversController;
 __decorate([
@@ -40,20 +43,28 @@ __decorate([
     __metadata("design:returntype", rxjs_1.Observable)
 ], DriversController.prototype, "getAllDrivers", null);
 __decorate([
-    (0, common_1.Get)("favorite"),
+    (0, common_1.Get)("favorite/all"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", rxjs_1.Observable)
 ], DriversController.prototype, "getAllFavorite", null);
 __decorate([
-    (0, common_1.Get)("favorite/:id"),
+    (0, common_1.Post)("favorite/:id"),
     __param(0, (0, common_1.Param)("id")),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", rxjs_1.Observable)
 ], DriversController.prototype, "createFavorite", null);
+__decorate([
+    (0, common_1.Delete)("favorite/:id"),
+    __param(0, (0, common_1.Param)("id")),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", rxjs_1.Observable)
+], DriversController.prototype, "deleteFavorite", null);
 exports.DriversController = DriversController = __decorate([
     (0, common_1.Controller)('drivers'),
-    __metadata("design:paramtypes", [drivers_service_1.DriversService, drivers_favorite_service_1.DriversFavoriteService])
+    __metadata("design:paramtypes", [drivers_service_1.DriversService,
+        drivers_favorite_service_1.DriversFavoriteService])
 ], DriversController);
 //# sourceMappingURL=drivers.controller.js.map

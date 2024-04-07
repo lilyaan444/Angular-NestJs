@@ -7,4 +7,5 @@ export type Driver = {
     familyName: string;
     dateOfBirth: string;
     nationality: string;
+    imageUrl: string;
 };

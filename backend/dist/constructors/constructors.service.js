@@ -20,6 +20,15 @@ let ConstructorsService = class ConstructorsService {
     getAll() {
         return this._constructors;
     }
+    getById(constructorId) {
+        const constructor = this._constructors.find((element) => element.constructorId === constructorId);
+        if (constructor !== undefined) {
+            return constructor;
+        }
+        else {
+            throw new common_1.NotFoundException(`Le constructeur avec l'id '${constructorId}' n'existe pas`);
+        }
+    }
 };
 exports.ConstructorsService = ConstructorsService;
 exports.ConstructorsService = ConstructorsService = __decorate([

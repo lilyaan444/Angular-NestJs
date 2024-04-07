@@ -9,4 +9,5 @@ export declare class DriversController {
     getAllDrivers(): Observable<Driver[]>;
     getAllFavorite(): Observable<Driver[]>;
     createFavorite(driverId: string): Observable<Driver>;
+    deleteFavorite(driverId: string): Observable<Driver>;
 }

@@ -6,4 +6,5 @@ export declare class DriversFavoriteService {
     constructor(_driversService: DriversService);
     getAll(): Driver[];
     create(driverId: string): Driver;
+    delete(driverId: string): Driver;
 }

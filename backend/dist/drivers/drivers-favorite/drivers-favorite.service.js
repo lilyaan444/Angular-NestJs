@@ -31,6 +31,18 @@ let DriversFavoriteService = class DriversFavoriteService {
             throw new common_1.ConflictException(`Le conducteur avec l'id '${driverId}' est déjà ajouté aux favoris`);
         }
     }
+    delete(driverId) {
+        const result = this._driversFavorite.find((element) => element.driverId === driverId);
+        if (result !== undefined) {
+            const driverIndex = this._driversFavorite.findIndex((element) => element.driverId === driverId);
+            const driver = this._driversFavorite[driverIndex];
+            this._driversFavorite.splice(driverIndex, 1);
+            return driver;
+        }
+        else {
+            throw new common_1.NotFoundException(`Le conducteur avec l'id '${driverId}' n'existe pas`);
+        }
+    }
 };
 exports.DriversFavoriteService = DriversFavoriteService;
 exports.DriversFavoriteService = DriversFavoriteService = __decorate([

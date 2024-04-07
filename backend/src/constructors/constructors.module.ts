@@ -5,6 +5,6 @@ import { ConstructorsFavoriteService } from './constructors-favorite/constructor
 
 @Module({
   controllers: [ConstructorsController],
-  providers: [ConstructorsService],
+  providers: [ConstructorsService, ConstructorsFavoriteService],
 })
 export class ConstructorsModule {}
