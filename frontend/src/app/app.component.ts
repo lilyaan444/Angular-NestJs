@@ -17,7 +17,7 @@ export class AppComponent {
     this.router.events.pipe(
       filter((event: RouterEvent): event is NavigationEnd => event instanceof NavigationEnd)
     ).subscribe((event: NavigationEnd) => {
-      this.showHeader = !event.urlAfterRedirects.startsWith('/home');
+      this.showHeader = !(event.urlAfterRedirects.startsWith('/home') || event.urlAfterRedirects.startsWith('/login'));
     });
   }
 }
