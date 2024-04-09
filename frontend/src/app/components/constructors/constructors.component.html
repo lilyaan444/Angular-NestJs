@@ -13,7 +13,9 @@
       </mat-card-content>
     </div>
     <mat-card-actions>
-      <button mat-button>FAVORIS</button>
+      <button mat-button (click)="constructorIsInFavorites(constructor) ? deleteFavorite(constructor.constructorId) : addFavorite(constructor.constructorId)">
+        {{ constructorIsInFavorites(constructor) ? 'SUPPRIMER' : 'FAVORIS' }}
+      </button>
       <button mat-button><a href="{{constructor.url}}" target="_blank" rel="noopener">PLUS D'INFO</a></button>
     </mat-card-actions>
   </mat-card>
