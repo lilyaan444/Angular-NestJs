@@ -1,27 +1,34 @@
 import { Injectable } from '@angular/core';
 import { F1Service } from './f1.service';
+import { lastValueFrom } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  private _logged: boolean
+  private _isAuthenticated = false;
 
-  constructor(private readonly _f1Service: F1Service) { 
-    this._logged = false;
+  constructor(private readonly _f1Service: F1Service) {}
+
+  login() {
+    this._isAuthenticated = true;
   }
 
-  isLogged(): boolean {
-    return this._logged;
+  logout() {
+    this._isAuthenticated = false;
   }
 
-  authenticate(login: string, password: string) {
-    this._f1Service.getUsers().subscribe((element) => {
-      const users = element;
+  isAuthenticated(): boolean {
+    return this._isAuthenticated;
+  }
 
-      const user = users.find((user) => user.login === login && user.password === password);
+  async authenticate(login: string, password: string): Promise<boolean> {
+    const users = await lastValueFrom(this._f1Service.getUsers());
 
-      this._logged = (user !== undefined);
-    });
+    const user = users.find((user) => user.login === login && user.password === password);
+
+    (user !== undefined) ? this.login() : this.logout();
+    
+    return this.isAuthenticated();
   }
 }

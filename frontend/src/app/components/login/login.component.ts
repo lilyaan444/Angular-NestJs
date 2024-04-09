@@ -22,10 +22,10 @@ export class LoginComponent {
     return this._errorMessage;
   }
 
-  onSubmit(form: Form): void {
-    this._authService.authenticate(form.login, form.password);
+  async onSubmit(form: Form) {
+    const isAuthenticated = await this._authService.authenticate(form.login, form.password);
 
-    if (this._authService.isLogged()) {
+    if (isAuthenticated) {
       this._router.navigate(["/home"]);
     }
     else {
