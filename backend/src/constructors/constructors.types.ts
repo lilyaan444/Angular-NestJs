@@ -3,5 +3,6 @@ export type Constructor = {
     url: string;
     name: string;
     nationality: string;
+    logoUrl: string;
 };
   
