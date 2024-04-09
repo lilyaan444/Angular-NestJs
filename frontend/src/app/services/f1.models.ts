@@ -22,3 +22,8 @@ export interface User {
   login: string;
   password: string;
 }
+
+export interface Form {
+  login: string;
+  password: string;
+}
