@@ -1,0 +1,11 @@
+<form #f="ngForm" class="login" (ngSubmit)="onSubmit(f.value)">
+    <mat-form-field class="full">
+        <input matInput placeholder="Login" ngModel name="login" required>
+    </mat-form-field>
+    <mat-form-field class="full">
+        <input matInput type="password" placeholder="Mot de passe" ngModel name="password" required>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Connexion</button>
+    <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+</form>
+  

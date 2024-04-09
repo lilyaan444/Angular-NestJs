@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input'
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { HomeComponent } from './pages/home/home.component';
 import { FavoritesComponent } from './pages/favorites/favorites.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -25,9 +27,12 @@ import { FavoritesComponent } from './pages/favorites/favorites.component';
     ConstructorsComponent,
     HomeComponent,
     FavoritesComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    MatInputModule,
     AppRoutingModule,
     HttpClientModule,
     MatToolbarModule,

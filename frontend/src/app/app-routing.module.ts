@@ -5,6 +5,7 @@ import { ConstructorsComponent } from './components/constructors/constructors.co
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FavoritesComponent } from './pages/favorites/favorites.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 const routes: Routes = [
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'header', component: HeaderComponent},
   { path: 'home', component: HomeComponent},
   { path: 'favorites', component: FavoritesComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

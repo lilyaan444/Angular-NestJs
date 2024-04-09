@@ -17,3 +17,8 @@ export interface Constructor {
   nationality: string;
   logoUrl: string;
 }
+
+export interface User {
+  login: string;
+  password: string;
+}
