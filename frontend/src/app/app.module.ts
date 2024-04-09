@@ -10,6 +10,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { DriversComponent } from './components/drivers/drivers.component';
 import { ConstructorsComponent } from './components/constructors/constructors.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
@@ -39,6 +41,7 @@ import { LoginComponent } from './components/login/login.component';
     MatButtonModule,
     MatIconModule,
     MatCardModule,
+    MatSnackBarModule
   ],
   providers: [
     provideAnimationsAsync()

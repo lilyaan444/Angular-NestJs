@@ -3,17 +3,28 @@
   <div class="favorites-section">
     <h3>Pilotes</h3>
     <div class="favorites-grid">
-      <!-- Remplace cela par une boucle *ngFor dans une application réelle -->
-      <div class="favorite-item">Pilote 1</div>
-      <div class="favorite-item">Pilote 2</div>
+      <div class="favorite-item" *ngFor="let pilot of pilots">
+        <img [src]="pilot.imageUrl" alt="{{pilot.givenName}} {{pilot.familyName}}" class="pilot-image">
+        <div class="pilot-info">
+          <h4>{{pilot.givenName}} {{pilot.familyName}}</h4>
+          <p>{{pilot.nationality}}</p>
+          <a href="{{pilot.url}}" target="_blank" rel="noopener">Plus d'info</a>
+        </div>
+      </div>
     </div>
   </div>
   <div class="favorites-section">
     <h3>Constructeurs</h3>
     <div class="favorites-grid">
-      <!-- Remplace cela par une boucle *ngFor dans une application réelle -->
-      <div class="favorite-item">Constructeur 1</div>
-      <div class="favorite-item">Constructeur 2</div>
+      <div class="favorite-item" *ngFor="let constructor of constructors">
+        <img [src]="constructor.logoUrl" alt="{{constructor.name}}" class="constructor-logo">
+        <div class="constructor-info">
+          <h4>{{constructor.name}}</h4>
+          <p>Nationalité: {{constructor.nationality}}</p>
+          <a href="{{constructor.url}}" target="_blank" rel="noopener">Plus d'info</a>
+        </div>
+      </div>
     </div>
   </div>
+
 </div>

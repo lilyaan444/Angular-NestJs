@@ -16,7 +16,9 @@
       </div>
     </div>
     <mat-card-actions>
-      <button mat-button>FAVORIS</button>
+      <button mat-button (click)="driverIsInFavorites(driver) ? deleteFavorite(driver.driverId) : addFavorite(driver.driverId)">
+        {{ driverIsInFavorites(driver) ? 'SUPPRIMER' : 'FAVORIS' }}
+      </button>
       <button mat-button><a href="{{driver.url}}" target="_blank" rel="noopener">PLUS D'INFO</a></button>
     </mat-card-actions>
   </mat-card>

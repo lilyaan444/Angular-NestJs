@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Driver } from './f1.models'; // Ajuste le chemin d'import selon ton architecture de fichier
-import { Constructor } from './f1.models';
+import { Driver, Constructor } from './f1.models';
 
 @Injectable({
   providedIn: 'root'
@@ -19,4 +18,30 @@ export class F1Service {
   getConstructors(): Observable<Constructor[]> {
     return this.http.get<Constructor[]>(`${this.baseUrl}/constructors/all`);
   }
+
+  driversGetAllFavorites(): Observable<any> {
+    return this.http.get(`${this.baseUrl}/drivers/favorite/all`);
+  }
+
+  driversAddFavorite(id: string): Observable<any> {
+    return this.http.post(`${this.baseUrl}/drivers/favorite/${id}`, {});
+  }
+
+  DriversDeleteFavorite(id: string): Observable<any> {
+    return this.http.delete(`${this.baseUrl}/drivers/favorite/${id}`);
+  }
+
+  constructorsGetAllFavorites(): Observable<any> {
+    return this.http.get(`${this.baseUrl}/constructors/favorite/all`);
+  }
+
+  constructorsAddFavorite(id: string): Observable<any> {
+    return this.http.post(`${this.baseUrl}/constructors/favorite/${id}`, {});
+  }
+
+  constructorsDeleteFavorite(id: string): Observable<any> {
+    return this.http.delete(`${this.baseUrl}/constructors/favorite/${id}`);
+  }
+
+
 }

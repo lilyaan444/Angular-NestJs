@@ -1,29 +1,52 @@
 .favorites {
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
 }
 
 .favorites-section {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+}
+
+.favorites-section h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .favorites-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px 0;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 0.3fr)); /* Ajustez la taille minimale et la largeur de la grille selon vos besoins */
+  grid-gap: 20px;
 }
 
 .favorite-item {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-  }
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.favorite-item img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.pilot-info h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.pilot-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.pilot-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.pilot-info a:hover {
+  text-decoration: underline;
 }
