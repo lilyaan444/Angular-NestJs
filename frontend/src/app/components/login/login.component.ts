@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
+import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
-import { LoginService } from '../../services/login.service';
-import { Form } from '../../services/f1.models';
+import { Form } from '../../services/f1.models'
 
 @Component({
   selector: 'app-login',
@@ -13,7 +13,7 @@ export class LoginComponent {
 
   constructor(
     private readonly _router: Router, 
-    private readonly _loginService: LoginService
+    private readonly _authService: AuthService
   ) {
     this._errorMessage = "";
   }
@@ -23,22 +23,13 @@ export class LoginComponent {
   }
 
   onSubmit(form: Form): void {
-    this._loginService.getUsers().subscribe((element) => {
-      const users = element;
+    this._authService.authenticate(form.login, form.password);
 
-      const user = users.find((user) => user.login === form.login);
-
-      if (user !== undefined) {
-        if (user.password === form.password) {
-          this._router.navigate(["/home"]);
-        }
-        else {
-          this._errorMessage = "mot de passe incorrect";
-        }
-      }
-      else {
-        this._errorMessage = "utilisateur introuvable";
-      }
-    });
+    if (this._authService.isLogged()) {
+      this._router.navigate(["/home"]);
+    }
+    else {
+      this._errorMessage = "login ou mot de passe incorrect";
+    }
   }
 }

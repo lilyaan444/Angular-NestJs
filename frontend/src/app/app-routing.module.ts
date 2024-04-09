@@ -6,15 +6,15 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FavoritesComponent } from './pages/favorites/favorites.component';
 import { LoginComponent } from './components/login/login.component';
-
+import { authGuard } from './guards/auth.guard';
 
 const routes: Routes = [
-  { path: 'drivers', component: DriversComponent },
-  { path: 'constructors', component: ConstructorsComponent },
-  { path: 'header', component: HeaderComponent},
-  { path: 'home', component: HomeComponent},
-  { path: 'favorites', component: FavoritesComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'home', component: HomeComponent, canActivate: [authGuard]},
+  { path: 'header', component: HeaderComponent, canActivate: [authGuard]},
+  { path: 'drivers', component: DriversComponent, canActivate: [authGuard] },
+  { path: 'constructors', component: ConstructorsComponent, canActivate: [authGuard] },
+  { path: 'favorites', component: FavoritesComponent, canActivate: [authGuard] },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
 ];
 @NgModule({

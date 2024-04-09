@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Driver, Constructor } from './f1.models';
+import { Driver, Constructor, User } from './f1.models';
 
 @Injectable({
   providedIn: 'root'
@@ -17,6 +17,10 @@ export class F1Service {
 
   getConstructors(): Observable<Constructor[]> {
     return this.http.get<Constructor[]>(`${this.baseUrl}/constructors/all`);
+  }
+
+  getUsers(): Observable<User[]> {
+    return this.http.get<User[]>(`${this.baseUrl}/users/all`);
   }
 
   driversGetAllFavorites(): Observable<any> {
@@ -42,6 +46,4 @@ export class F1Service {
   constructorsDeleteFavorite(id: string): Observable<any> {
     return this.http.delete(`${this.baseUrl}/constructors/favorite/${id}`);
   }
-
-
 }
